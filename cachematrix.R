@@ -1,9 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These two functions (makeCacheMatrix and cacheSolve) work together
+## to make a cached inverted matrix so the operation of inverting the
+## matrix is only performed once but the result can be called many
+## times.
 
-##TEST MESSAGE***************
 
-## Write a short comment describing this function
+## This function returns the makeCacheMatrix function.
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -21,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function returns the inverted matrix by calling the function
+## created with makeCacheMatrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
